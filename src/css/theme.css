@@ -1,0 +1,34 @@
+.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-theme {
+    --background-color: #333333;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-theme .card {
+    background-color: #333333;
+    /* Cor de fundo para o tema escuro */
+    color: #ffffff;
+    /* Cor do texto para o tema escuro */
+}
+
+.dark-theme .card .card-title,
+.dark-theme .card .card-text,
+.dark-theme .card .card-link {
+    color: #ffffff;
+    /* Cor do texto para o tema escuro */
+}
+
+/* Para links dentro dos cartões que possuem uma classe específica do Bootstrap */
+.dark-theme .card .card-link {
+    color: #dddddd;
+    /* Cor clara para os links, se desejar diferenciar */
+}
